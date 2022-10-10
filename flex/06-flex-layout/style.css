@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
@@ -24,4 +27,107 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+li {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*Header format*/
+.header ul.left-links {
+  flex: 1;
+  justify-content: left;
+  padding-left: 0px;
+ }
+
+.header ul.right-links {
+  flex: 1;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .left-links {
+  display: flex;
+  
+}
+
+.header .right-links {
+  display: flex;
+}
+
+/*content format*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+}
+
+/*footer format*/
+.footer {
+  display: flex;
+  background-color: #eeeeee;
+}
+
+.footer ul.left-links {
+  flex: 1;
+  justify-content: left;
+  padding-left: 0px;
+ }
+
+.footer ul.right-links {
+  flex: 1;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .left-links {
+  display: flex;
+  
+}
+
+.footer .right-links {
+  display: flex;
+}
+
+
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: gray;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: gray;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+/* selected link */
+a:active {
+  text-decoration: none;
+  color: gray;
 }
